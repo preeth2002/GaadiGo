@@ -1,0 +1,206 @@
+h1{
+  font-size: 50px;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  margin-top: 0px;
+  background-color: aliceblue;
+}
+
+.w{float: left;
+width: 30%;
+height: 600px; /* only for demonstration, should be removed */
+background: #add8e6;
+padding: 20px;
+}
+.r{
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color:#add8e6;
+  height: 800px;
+}
+.p{
+  font-size: 60px;
+  font-family: 'Alfa Slab One';
+  margin-top: 10px;
+  text-align: center;
+  color: black;
+}
+.k{
+  font-size: 27px;
+  font-family: 'Times New Roman', Times, serif;
+  margin-top: 60px;
+}
+.a{
+  background-color: black;
+  height: 150px;
+}
+.b{
+  color: white;
+  font-size: 20px;
+}
+.baaa:hover{
+  color: red; 
+}
+.abd{
+  padding-left: 3cm;
+}
+.e{
+  background-color: var(--color);
+  border: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 0.3em;
+  font-weight: 700;
+  letter-spacing: .5px;
+  font-size: 1.2rem;
+  padding: 1em 3.5em;
+  display: inline-block;
+}
+.j{
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 0.3em;
+  font-weight: 700;
+  letter-spacing: .5px;
+  font-size: 1.2rem;
+  display: inline-block;
+  padding: 1em 3.5em;
+  background-color:#333;
+ 
+}
+body{
+  background-color: #add8e6;
+}
+.vertical-line{
+  border-left: 4px solid #4b42f5;
+      height: 200px;
+}
+
+.scroll {
+  background-color: #add8e6;
+  width: 1300px;
+  height: 600px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align: center;
+  padding: 20px;
+}
+.disp{
+  display: block;
+  justify-content: left;
+}
+.button{
+  background-color: #add8e6;
+  
+  border:#add8e6;
+  
+}
+.button:hover{
+  color: red;
+}
+.ahref{
+  text-decoration: none;
+  color: black;
+  font-family: 'Arvo';
+  font-size: 30px;
+}
+.list{
+  margin-left: 2cm;
+  margin-top: 1cm;
+}
+.font-pad{
+  font-size: 2rem;
+  margin-left: 2cm;
+}
+hr{
+  border: 4px solid darkblue;
+  width: 100%;
+  
+}
+.mark{
+  margin-top: 60px;
+  background-color: #333;
+  width: 500px;
+  
+}
+
+      p {
+        font-family: 'Averia Libre';
+          color: white;
+          font-size: 1.5vw;
+      }
+
+     
+
+.coupe{
+justify-content: center;
+}
+.pp {
+font-family: 'Averia Libre';
+  color: white;
+  font-size: 1.5vw;
+}
+.row-mar{
+margin-top: 0px;
+}
+.card__inner {
+background-color: rgba(0, 0, 0, 0.9);
+color: #fff;
+position: absolute;
+top: 0px;
+bottom: 0px;
+left: 0px;
+right: 0px;
+z-index: 1;
+opacity: 0;
+padding: 2rem 1.3rem 2rem 2rem;
+transition: all 0.4s ease 0s;
+}
+
+/*  On hovering card opacity
+of content must be 1*/
+.card:hover .card__inner {
+opacity: 1;
+}
+
+/*  General property for heading
+and paragraph*/
+.card__inner h2 {
+margin-top: 10rem;
+font-size: 40px;
+}
+
+.card__inner p {
+overflow-y: scroll;
+height: 87%;
+padding-right: 1rem;
+font-weight: 200;
+line-height: 2.5rem;
+margin-top: 1.5rem;
+}
+a {
+  display: inline-block;
+  
+  background-color: var(--color);
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 0.3em;
+  font-weight: 700;
+  letter-spacing: .5px;
+  font-size: 1.2rem;
+}
+.blank,
+.other {
+  width: 100%;
+  min-height: 60vh;
+  background-color: var(--color);
+}
+.star{
+  padding-right: 10px;
+}
+.logo{
+  margin-left: 0.5px;
+}

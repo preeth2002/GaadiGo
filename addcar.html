@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CAR REGISTRATION</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link href="./styles/addcar.css" rel="stylesheet" />
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+  <script type="module" src="./js/addcar.js"></script>
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+  <div>
+    <nav class="navbar navbar-expand-lg a">
+      <div class="container-fluid">
+        <a class="navbar-brand b baaa" href="./home.html"><img src="./pics/ryan sucks.png" alt="" style="height: 130px;"
+            class="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item abd">
+              <a class="nav-link b baaa" aria-current="page" href="./home.html">Home</a>
+            </li>
+            <li class="nav-item abd">
+              <a class="nav-link b baaa" href="./addcar.html">Register Your Car</a>
+            </li>
+            <li class="nav-item dropdown abd">
+              <a class="nav-link dropdown-toggle b baaa" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                More
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./faq.html">FAQs</a></li>
+                <li><a class="dropdown-item" href="#">About Us</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="./review.html">Rate Us</a></li>
+              </ul>
+            </li>
+          </ul>
+          <button class="btn btn-outline-success e" type="submit"><a href="./login.html" class="j baaa">LOGIN /
+              SIGNUP</a></button>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <form id="addCarForm">
+    <div class="container">
+      <h1>VEHICLE REGISTRATION</h1>
+
+      <hr />
+      <label for="owner_name"> NAME OF OWNER </label>
+      <input id="owner_name" type="text" name="NAME OF OWNER" placeholder="NAME" size="15" required />
+      <label for="car_brand"> CAR BRAND: </label>
+      <input id="car_brand" type="text" name="COMPANY OF CAR" placeholder="Ex.SKODA" size="15" required />
+      <label for="car_model"> CAR MODEL: </label>
+      <input id="car_model" type="text" name="CAR MODEL" placeholder="MODEL" size="15" required />
+      <label for="registration_number"> REGISTRATION: </label>
+      <input id="registration_number" type="text" name="LICENCE NO." placeholder="Ex.TNCZ348866" size="15" required />
+      <label for="odometer_reading"> KILOMETERS RAN: </label>
+      <input id="odometer_reading" type="number" name="KILOMETERS COVERED" placeholder="KILOMETERS" size="15"
+        required />
+      <label for="vehicle_type">CATEGORY OF VEHICLE :</label>
+      <select id="vehicle_type">
+        <option value="Sedan">Sedan</option>
+        <option value="Hatchback">Hatchback</option>
+        <option value="SUV-'Sports Utility Vehicle'">SUV-'Sports Utility Vehicle</option>
+        <option value="Pick-Up Truck">Pick-Up Truck</option>
+        <option value="Coupe">Coupe</option>
+      </select>
+      <label for="fuel_type">FUEL TYPE:</label>
+      <select id="fuel_type">
+        <option value="Petrol">Petrol</option>
+        <option value="Diesel">Diesel</option>
+        <option value="Electric">Electric</option>
+        <option value="Other">Other</option>
+      </select>
+      <!-- TODO: Add Image Upload Functionality-->
+      <!-- <label for="image_upload">ADD PHOTOS:</label>
+      <input id="image_upload" type="file" accept="image/png, image/jpg"> -->
+      <label for="phone_number">PHONE:</label>
+      <input type="text" id="phone_number" name="phone" placeholder="PHONE NO." required />
+      <label for="address">CURRENT ADDRESS :</label>
+      <textarea cols="80" rows="5" id="address" placeholder="Current Address" value="address" required></textarea>
+      <label for="email"><b>EMAIL</b></label>
+      <input id="email" type="text" placeholder="Enter Email" name="email" required />
+      <div class="d-grid gap-2 col-6 mx-auto">
+        <button class="btn btn-primary" type="submit">SUBMIT</button>
+        <p id="firebase_success_msg" style="display: none; text-align: center; font-weight: 500; font-style: italic;">
+          Form submitted successfully!
+        </p>
+      </div>
+  </form>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/payment.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg a">
+        <div class="container-fluid">
+            <a class="navbar-brand b baaa" href="./home.html"><img src="./pics/ryan sucks.png" alt=""
+                    style="height: 130px;" class="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item abd">
+                        <a class="nav-link b baaa" aria-current="page" href="./home.html">Home</a>
+                    </li>
+                    <li class="nav-item abd">
+                        <a class="nav-link b baaa" href="./addcar.html">Register Your Car</a>
+                    </li>
+                    <li class="nav-item dropdown abd">
+                        <a class="nav-link dropdown-toggle b baaa" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            More
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./faq.html">FAQs</a></li>
+                            <li><a class="dropdown-item" href="#">About Us</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="./review.html">Rate Us</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <button class="btn btn-outline-success e" type="submit"><a href="./login.html" class="j baaa">LOGIN /
+                        SIGNUP</a></button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="BOX">
+        <header class="txt">NAME: Ryan Verghese</header>
+        <p id="n"></p>
+        <header class="txt">PHONE NUMBER: 182917381909</header>
+        <p id="P"></p>
+        <header class="txt">Total cost is: 1500</header>
+        <p class="txt"> Thank you for booking from GaadiGo, you will recieve an SMS shortly</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <span id="i"></span>
+    <script>
+        const t = localStorage.getItem("Name");
+        document.getElementById("i").value = t;
+    </script>
+
+
+
+
+    <footer class="d">
+        <p>
+
+            GaadiGo tc
+        </p>
+    </footer>
+</body>
+
+</html>

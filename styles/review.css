@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Barlow Semi Condensed', sans-serif;
+  background-color: #add8e6;
+}
+a:link,a:active,a:visited,a:hover{
+	color:white;
+}
+
+.outerdiv
+{
+	width: 100%;
+    min-height: 100vh;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.innerdiv
+{
+	transform: scale(0.9);
+	margin: 1rem;
+	display: grid;
+	grid-gap: 2.5rem;
+	grid-template-rows: repeat(2,22rem);
+	grid-template-columns: repeat(4,17rem);
+  margin-top: 3rem;
+}
+.eachdiv
+{
+	padding: 1rem 2rem;
+    border-radius: 0.8rem;
+    box-shadow: 5px 5px 20px #6d6b6b6b;
+    color: white;
+}
+.div1
+{
+	background: #333;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    background-image: url(https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position-x: 25rem;
+}
+.div2
+{
+	background:#333;
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+.div3
+{
+	background: #333;
+    grid-column: 4/5;
+    grid-row: 1/3;
+    color: white;
+}
+.div4
+{
+	background: #333;
+	grid-column: 1/2;
+    grid-row: 2/3;
+    color: white;
+}
+.div5
+{
+	background: #333;
+	grid-column: 2/4;
+    grid-row: 2/3;
+}
+.userdetails
+{
+	display: flex;
+}
+.imgbox
+{
+	margin-right: 1rem;
+}
+.imgbox img
+{
+	border-radius: 50%;
+	width: 2rem;
+	border: 2px solid #cec5c5;
+}
+.detbox
+{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.detbox p
+{
+	margin: 0;
+}
+.detbox .name
+{
+	color: white;
+    font-size: 0.9rem;
+    margin-bottom: 0.1rem;
+    font-weight: 600;
+}
+.detbox .name.dark
+{
+	color: white;
+}
+.detbox .designation
+{
+	color: hsl(0, 0%, 81%);
+    opacity: 50%;
+    font-size: 0.8rem;
+}
+.detbox .designation.dark
+{
+	color: white;
+}
+.review h4
+{
+	font-size: 1.4rem;
+	color: white;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 0.8rem;
+}
+.review.dark h4{
+	color: white;
+}
+.review p
+{
+	font-size: 0.95rem;
+    color: white;
+    font-weight: 500;
+    opacity: 50%;
+    line-height: 1.5;
+}
+.review.dark p{
+	color: white;
+}
+.attribution
+{
+	font-size: 1rem;
+    line-height: 1.5;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    text-align: right;
+}
+.attribution a
+{
+	text-decoration: none;
+}
+
+@media only screen and (max-width: 1000px)
+{
+	.innerdiv
+	{
+		transform: scale(0.7);
+	}
+}
+@media only screen and (max-width: 800px)
+{
+	.innerdiv
+	{
+		transform: scale(0.6);
+	}
+}
+@media only screen and (max-width: 600px)
+{
+	.div1 {
+		background-position-x: 10rem;
+	}
+	.innerdiv
+	{
+		display: flex; 
+		flex-direction: column;
+		transform: scale(1);
+		margin: 2rem;
+		margin-bottom: 5rem;
+	}
+	.attribution
+	{
+		position: relative;
+	}
+}
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html,body{
+  margin: 0;
+  height: 100%;
+  place-items: center;
+  text-align: center;
+  background: #add8e6;
+}
+.container{
+  position: relative;
+  width: 400px;
+  background: #333;
+  padding: 20px 30px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 10cm;
+  margin-top: 3cm;
+}
+.container .post{
+  display: none;
+}
+.container .text{
+  font-size: 25px;
+  color: white;
+  font-weight: 500;
+}
+.container .edit{
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  font-size: 16px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+.container .edit:hover{
+  text-decoration: underline;
+}
+.container .star-widget input{
+  display: none;
+}
+.star-widget label{
+  font-size: 40px;
+  color: white;
+  padding: 10px;
+  float: right;
+  transition: all 0.2s ease;
+}
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label{
+  color: #fd4;
+}
+input:checked ~ label{
+  color: #fd4;
+}
+input#rate-5:checked ~ label{
+  color: #fe7;
+  text-shadow: 0 0 20px #952;
+}
+#rate-1:checked ~ form header:before{
+  content: "I just hate it ";
+}
+#rate-2:checked ~ form header:before{
+  content: "I don't like it ";
+}
+#rate-3:checked ~ form header:before{
+  content: "It is awesome ";
+}
+#rate-4:checked ~ form header:before{
+  content: "I just like it ";
+}
+#rate-5:checked ~ form header:before{
+  content: "I just love it ";
+}
+.container form{
+  display: none;
+}
+input:checked ~ form{
+  display: block;
+}
+form header{
+  width: 100%;
+  font-size: 25px;
+  color: #fe7;
+  font-weight: 500;
+  margin: 5px 0 20px 0;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+form .textarea{
+  height: 100px;
+  width: 100%;
+  overflow: hidden;
+}
+form .textarea textarea{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: #eee;
+  border: 1px solid #333;
+  background: #222;
+  padding: 10px;
+  font-size: 17px;
+  resize: none;
+}
+.textarea textarea:focus{
+  border-color: #444;
+}
+form .btn{
+  height: 45px;
+  width: 100%;
+  margin: 15px 0;
+}
+form .btn button{
+  height: 100%;
+  width: 100%;
+  border: 1px solid #444;
+  outline: none;
+  background: #222;
+  color: #999;
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+form .btn .button:hover{
+  background: #1b1b1b;
+}
+.a{
+  background-color: black;
+  height: 150px;
+}
+.b{
+  color: white;
+  font-size: 50px;
+}
+.baaa:hover{
+  color: red; 
+}
+.abd{
+  padding-left: 3cm;
+}
+.e{
+  background-color: var(--color);
+  border: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 0.3em;
+  font-weight: 700;
+  letter-spacing: .5px;
+  font-size: 1.2rem;
+  padding: 1em 3.5em;
+  display: inline-block;
+}
+.j{
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 0.3em;
+  font-weight: 700;
+  letter-spacing: .5px;
+  font-size: 1.2rem;
+  display: inline-block;
+  padding: 1em 3.5em;
+  background-color:#333;
+  border: none;
+ 
+}
+a {
+  display: inline-block;
+  
+  background-color: var(--color);
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 0.3em;
+  font-weight: 700;
+  letter-spacing: .5px;
+  font-size: 1.2rem;
+}
