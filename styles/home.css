@@ -18,7 +18,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url("../pics/wp6473476.jpg");
+  background-image: url("../img/wp6473476.jpg");
   background-size: cover;
   background-position: center;
   
@@ -71,7 +71,7 @@ a {
 }
 
 .second {
-  background-image:url("../pics/pexels-photo-13568748.webp");
+  background-image:url("../img/pexels-photo-13568748.webp");
   background-attachment: fixed;
   height: 1200px;
 }
@@ -109,15 +109,15 @@ h3 {
 }
 
 .img-first {
-  background-image: url("../pics/person1.jpg");
+  background-image: url("../img/person1.jpg");
 }
 
 .img-second {
-  background-image: url("../pics/person2.jpg");
+  background-image: url("../img/person2.jpg");
 }
 
 .img-third {
-  background-image: url("../pics/person3.jpg");
+  background-image: url("../img/person3.jpg");
 }
 
 .second {
