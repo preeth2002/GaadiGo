@@ -1,3 +1,6 @@
+await import ("https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js");
+await import ("https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js");
+
 const firebaseConfig = {
   apiKey: "AIzaSyAKIchMktJz5rM_XvbIscYw1QYB4qobThc",
   authDomain: "gaadigo-d269c.firebaseapp.com",
@@ -10,7 +13,7 @@ const firebaseConfig = {
 };
 
 firebase.initializeApp(firebaseConfig);
-const firestore = firebase.firestore();
+const db = firebase.firestore();
 
 export function firebaseSuccessMsg() {
   // Requires the following element to Exist in HTML Page
@@ -22,5 +25,5 @@ export function firebaseSuccessMsg() {
 }
 
 // Collection and document references
-export const carRegister = firestore.collection("car_register");
-export const loginDetails = firestore.collection("login_details");
+export const carRegister = db.collection("car_register");
+export const loginDetails = db.collection("login_details");
