@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A car rental miniproject website">
+    <title>GaadiGo</title>
+    <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script type="text/javascript" src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="./components/header.js"></script>
+    <script type="text/javascript" src="./components/footer.js"></script>
+    <script type="text/javascript" src="./components/unauthenticated-error.js"></script>
+    <script type="text/javascript" src="./js/unauthenticated-deny.js"></script>
+    <script type="module" src="./js/login.js"></script>
+    <script type="module" src="./js/signup.js"></script>
+    <script type="module" src="./js/checkout.js"></script>
+</head>
+
+<body>
+    <header-component></header-component>
+    <main class="mb-5">
+        <div class="container" style="max-width: 960px;">
+            <div class="py-5 text-center">
+                <img src="./assets/brand/gaadigo-logo.png" alt="GaadiGo" width="72" height="72">
+                <h2>Checkout</h2>
+                <p id="subTitle" class="lead">Take a moment to make sure all the information below is correct before proceeding with
+                    payment.</p>
+            </div>
+
+            <div class="row g-5">
+                <div id="card-space" class="col-md-5 col-lg-4 order-md-last">
+                    <h4 class="d-flex justify-content-between align-items-center mb-3">
+                        <span class="text">Selected Car</span>
+                    </h4>
+
+                </div>
+                <div class="col-md-7 col-lg-8">
+                    <h4 class="mb-3">Billing Information</h4>
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-12">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" disabled required>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" disabled required>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="phone" class="form-label">Phone</label>
+                                <input type="tel" class="form-control" id="phone" disabled required>
+                            </div>
+
+                            <div class="col-12 mt-5">
+                                <p>Update your profile to change the billing/contact information.</p>
+                            </div>
+
+                            <hr class="my-4">
+
+                            <button id="checkout-button" class="w-100 btn btn-success btn-lg">Continue to
+                                Payment →</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Start Sign up error modal -->
+        <div class="modal fade" tabindex="-1" role="dialog" id="paymentSuccessModal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content rounded-4 shadow">
+                    <div class="modal-header p-5 pb-4 border-bottom-0">
+                        <!-- <h1 class="modal-title fs-5" >Modal title</h1> -->
+                        <!-- <h1 class="fw-bold mb-0 fs-2">Sign up for free</h1> -->
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-5 pt-0">
+                        <h2 class="fs-5 fw-bold">Payment Authorized</h2>
+                        <hr class="my-4">
+                        <small class="text-muted">Your payment has been successfully processed. Thank you. <br /> Happy GaadiGo'ing!</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Sign up error modal -->
+    </main>
+    <unauthenticated-error></unauthenticated-error>
+    <footer-component></footer-component>
+</body>
+
+</html>

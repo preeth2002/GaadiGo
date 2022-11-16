@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A car rental miniproject website">
+    <title>GaadiGo</title>
+    <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script type="text/javascript" src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="./components/header.js"></script>
+    <script type="text/javascript" src="./components/footer.js"></script>
+    <script type="text/javascript" src="./components/unauthenticated-error.js"></script>
+    <script type="text/javascript" src="./js/unauthenticated-deny.js"></script>
+    <script type="module" src="./js/login.js"></script>
+    <script type="module" src="./js/signup.js"></script>
+</head>
+
+<body>
+    <header-component></header-component>
+    <main class="mb-5">
+        <div class="container-sm mt-5">
+            <h2 style="text-align: center;">Frequently Asked Questions</h2>
+
+            <h3>For Renters</h3>
+            <div class="accordion mt-4 mb-5" id="rentersAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Question #1
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#rentersAccordion">
+                        <div class="accordion-body">
+                            This is the first question's answer.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Question #2
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#rentersAccordion">
+                        <div class="accordion-body">
+                            This is the second question's answer.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Question #3
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#rentersAccordion">
+                        <div class="accordion-body">
+                            This is the third question's answer.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3>For Hosts</h3>
+            <div class="accordion mt-4" id="hostsAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                            Question #1
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#hostsAccordion">
+                        <div class="accordion-body">
+                            This is the first question's answer.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            Question #2
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#hostsAccordion">
+                        <div class="accordion-body">
+                            This is the second question's answer.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            Question #3
+                        </button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#hostsAccordion">
+                        <div class="accordion-body">
+                            This is the third question's answer.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer-component></footer-component>
+</body>
+
+</html>
