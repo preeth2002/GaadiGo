@@ -1,6 +1,9 @@
-import { carRegister, storage, getImageURL } from "./firebase.js";
+import { carRegister, getImageURL } from "./firebase.js";
+const auth_status = localStorage.getItem("authenticated");
 
 window.addEventListener("load", () => {
+  if(!auth_status) return;
+  console.log("Loading cars...");
   carRegister.get().then((querySnapshot) => {
     querySnapshot.forEach(async (doc) => {
       let car = doc.data();
