@@ -5,6 +5,12 @@
 
 GaadiGo is a mini project that demonstrates web design concepts through a car rent booking website.
 
+## Development
+
+Clone repo and run `netlify-dev` from the root directory.  
+Install dependencies with npm or yarn.  
+This should launch a development server for both the site and functions.  
+
 ## File Structure
 ```
 netlify/functions - Serverless functions (just for razorpay capture lol)

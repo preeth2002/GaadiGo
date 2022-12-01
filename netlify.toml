@@ -1,3 +1,2 @@
-[[dev]]
-    [build]
-    publish="public"
+[build]
+    publish = "public"
